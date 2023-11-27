@@ -1,0 +1,188 @@
+/* Main html styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+#holder {
+  background-image: url(./david-kovalenko-G85VuTpw6jg-unsplash.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+main {
+  width: 1200px;
+  height: 100vh;
+  display: flex;
+  margin-top: 50px;
+}
+#grayarea {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  width: 25%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: gainsboro;
+  margin: 30px;
+  padding: 8px;
+}
+.heading {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.TaskNumbers {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.AddTaskContainer {
+  margin: 10px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.AddTaskContainer:hover {
+  background-color: rgb(174, 170, 170);
+}
+.AddTaskContainer:hover {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+span {
+  color: gray;
+}
+/* Add Task Section styles */
+#AddTaskSection {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  top: 150px;
+  border-radius: 5px;
+  border: solid 1pxx white;
+  background-color: white;
+  padding: 30px;
+  visibility: hidden;
+}
+label {
+  margin-top: 20px;
+}
+input {
+  height: 2rem;
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+textarea {
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+select {
+  height: 2rem;
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+#Description {
+  height: 6rem;
+}
+button {
+  background-color: black;
+  border-radius: 5px;
+  border: solid 1px black;
+  color: white;
+  height: 1.8rem;
+  margin-top: 20px;
+}
+.red_p {
+  color: red;
+  visibility: hidden;
+}
+
+.task_container {
+  height: 100px;
+  display: flex;
+  padding: 8px;
+  background-color: white;
+  border: solid 1px white;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: space-between;
+}
+.task_justify {
+  display: flex;
+  justify-content: flex-start;
+}
+.done_icon {
+  border: solid 1px gray;
+  border-radius: 50%;
+  background: url(./check-solid.svg) center no-repeat;
+  width: 24px;
+  height: 24px;
+  background-size: 50%;
+  cursor: pointer;
+}
+.task_info_holder {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 10px;
+}
+.task_title {
+  font-size: 16px;
+}
+.task_desc {
+  font-size: 16px;
+}
+.task_priority {
+  border: solid 1px gray;
+  border-radius: 5px;
+  font-size: 12px;
+  width: fit-content;
+  padding: 5px;
+}
+.task_edit_close_holder {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 24px;
+}
+.task_edit {
+  border: solid 1px gray;
+  border-radius: 50%;
+  background: url(./pen-to-square-solid.svg) center no-repeat;
+  width: 24px;
+  height: 24px;
+  background-size: 50%;
+  cursor: pointer;
+}
+.task_close {
+  border: solid 1px gray;
+  border-radius: 50%;
+  background: url(./xmark-solid.svg) center no-repeat;
+  width: 24px;
+  height: 24px;
+  background-size: 50%;
+  cursor: pointer;
+}
+
+.tasks_holder {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 30px;
+}

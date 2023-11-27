@@ -1,0 +1,10 @@
+.task_info{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+.task_desc {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+}
