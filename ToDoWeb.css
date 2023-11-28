@@ -14,12 +14,6 @@
   display: flex;
   justify-content: center;
 }
-main {
-  width: 1200px;
-  height: 100vh;
-  display: flex;
-  margin-top: 50px;
-}
 #grayarea {
   display: flex;
   justify-content: center;
@@ -28,6 +22,12 @@ main {
   left: 0;
   width: 100vw;
   height: 100vh;
+}
+main {
+  width: 1200px;
+  height: 100vh;
+  display: flex;
+  margin-top: 50px;
 }
 .container {
   width: 25%;
@@ -185,4 +185,43 @@ button {
   flex-direction: column;
   gap: 5px;
   min-height: 30px;
+  max-height: 650px;
+  overflow-y: scroll;
+}
+/* responsive */
+
+@media screen and (max-width: 850px) {
+  #holder {
+    background-image: url(https://picsum.photos/850/1300);
+  }
+  .container {
+    width: 300px;
+  }
+  #main {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+  }
+  .tasks_holder {
+    max-height: 340px;
+    overflow-y: scroll;
+  }
+  #grayarea {
+    height: auto;
+  }
+  #AddTaskSection {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #holder {
+    background-image: url(https://picsum.photos/720/1200);
+    max-height: 900px;
+    overflow-y: scroll;
+  }
+  .tasks_holder {
+    max-height: 230px;
+    overflow-y: scroll;
+  }
 }

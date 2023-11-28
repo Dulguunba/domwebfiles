@@ -108,15 +108,24 @@ const GetTaskInfo = () => {
     state.tasks.sort(
       (a, b) => StatusSortValue[b.priority] - StatusSortValue[a.priority]
     );
+    // localStorage.setItem("tasks", JSON.stringify(state_json.tasks));
     render();
+    //JSON local storage
 
     AddTaskHidden();
   } else {
     RequireInfo();
   }
 };
+
+// const state = JSON.parse(MyJson);
+
 //push info and appendchild
 const render = () => {
+  // console.log("MyJson", MyJson);
+  // const state = JSON.parse(localStorage.getItem("tasks"));
+  // console.log(state);
+  // const state = JSON.parse(MyJson);
   const Todo_tasks = document.getElementById("Todo_tasks");
   const Inprogress_tasks = document.getElementById("Inprogress_tasks");
   const Stuck_tasks = document.getElementById("Stuck_tasks");
@@ -135,6 +144,7 @@ const render = () => {
   };
 
   var j = 0; //for task container - id number
+
   state.tasks.forEach((task) => {
     const containerId = j++;
     const task_container = document.createElement("div");
